@@ -121,7 +121,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
 
         <div className="lg:col-span-5 flex flex-col justify-center space-y-6 md:space-y-10">
           <div className="p-6 md:p-10 bg-[#f8f8f8] rounded-sm border-l-[8px] md:border-l-[12px] border-brand-navy shadow-inner relative overflow-hidden group">
-            <h5 className="text-[8px] md:text-[10px] font-extrabold text-brand-navy uppercase tracking-[0.1em] md:tracking-[0.4em] mb-4 md:mb-6 flex items-center gap-3 whitespace-nowrap">
+            <h5 className="text-[8px] md:text-[10px] font-extrabold text-brand-navy uppercase tracking-[0.1em] md:tracking-[0.4em] mb-6 md:mb-10 flex items-center gap-3 whitespace-nowrap">
               Internal Performance Delta
             </h5>
             <p className="text-lg md:text-3xl text-brand-navy font-bold leading-snug">
