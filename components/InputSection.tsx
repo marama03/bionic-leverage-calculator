@@ -121,10 +121,7 @@ export const InputSection: React.FC<InputSectionProps> = ({ metrics, setMetrics,
         </button>
       </div>
 
-      <div className="text-center mt-10 text-[10px] text-[#555] uppercase tracking-[2px] leading-loose font-bold">
-        PROPRIETARY INTELLIGENCE LAYER DIAGNOSTIC FRAMEWORK V4.2<br />
-        © 2025 DANIEL MARAMA. ALL RIGHTS RESERVED.
-      </div>
+
     </div>
   );
 };
