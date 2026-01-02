@@ -27,9 +27,9 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen font-sans antialiased flex flex-col items-center px-4 pt-20">
+    <div className="min-h-screen font-sans antialiased flex flex-col items-center pt-20">
       {/* Page Wrapper */}
-      <main className="pb-32 w-full max-w-[900px] flex flex-col items-center text-center">
+      <main className="pb-32 w-full max-w-[900px] flex flex-col items-center text-center px-4">
         {!results ? (
           <>
             <h1 className="text-[42px] md:text-[52px] font-extrabold text-brand-navy mb-[25px] tracking-[-1.5px] leading-[1.1]">
@@ -50,7 +50,7 @@ const App: React.FC = () => {
       </main>
 
       {/* Centered Legal Footer */}
-      <footer className="w-full py-16 border-t border-brand-border bg-white flex flex-col items-center">
+      <footer className="w-full py-16 border-t border-brand-border bg-white flex flex-col items-center px-4">
         <div className="text-center text-[10px] text-[#bbbbbb] uppercase tracking-[1.5px] leading-[2] font-semibold">
           AOS ARCHITECTURE & PRIVATE INTELLIGENCE LAYERS<br />
           RESERVED FOR ORGANIZATIONS WITH $5M+ IN ANNUAL REVENUE.
