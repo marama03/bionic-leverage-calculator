@@ -87,8 +87,8 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
       {/* Chart and Delta Section */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-24 items-center text-left">
         <div className="lg:col-span-7 bg-white p-6 md:p-12 rounded-sm shadow-2xl border border-brand-border relative">
-          <h3 className="text-base md:text-2xl font-extrabold text-brand-navy mb-6 tracking-tight italic whitespace-nowrap">Architecture Audit: Output per FTE</h3>
-          <p className="text-brand-muted text-[8px] md:text-[10px] font-extrabold uppercase tracking-[0.1em] md:tracking-[0.3em] mb-8 md:mb-12 whitespace-nowrap">Comparative Benchmark: Legacy vs. Bionic Scale</p>
+          <h3 className="text-base md:text-2xl font-extrabold text-brand-navy mb-6 tracking-tight italic">Architecture Audit: Output per FTE</h3>
+          <p className="text-brand-muted text-[8px] md:text-[10px] font-extrabold uppercase tracking-[0.1em] md:tracking-[0.2em] mb-8 md:mb-12">Comparative Benchmark: Legacy vs. Bionic Scale</p>
           <div className="h-[300px] md:h-[400px] w-full">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={chartData} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
@@ -121,7 +121,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
 
         <div className="lg:col-span-5 flex flex-col justify-center space-y-6 md:space-y-10">
           <div className="p-6 md:p-10 bg-[#f8f8f8] rounded-sm border-l-[8px] md:border-l-[12px] border-brand-navy shadow-inner relative overflow-hidden group">
-            <h5 className="text-[8px] md:text-[10px] font-extrabold text-brand-navy uppercase tracking-[0.1em] md:tracking-[0.4em] mb-6 md:mb-10 flex items-center gap-3 whitespace-nowrap">
+            <h5 className="text-[8px] md:text-[10px] font-extrabold text-brand-navy uppercase tracking-[0.1em] md:tracking-[0.4em] mb-6 md:mb-10 flex items-center gap-3">
               Internal Performance Delta
             </h5>
             <p className="text-lg md:text-3xl text-brand-navy font-bold leading-snug">
