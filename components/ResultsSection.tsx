@@ -50,7 +50,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
           </h4>
           <div className="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-brand-border">
             <div className="text-[9px] md:text-[10px] font-extrabold text-brand-muted uppercase tracking-widest mb-2 opacity-60">Hidden Payroll Leak</div>
-            <div className="text-3xl md:text-5xl font-extrabold text-brand-navy tracking-tight truncate">{formatCurrency(results.hiringTax)} <span className="text-xs text-brand-muted">/ Year</span></div>
+            <div className="text-3xl md:text-5xl font-extrabold text-brand-navy tracking-tight">{formatCurrency(results.hiringTax)} <span className="text-xs text-brand-muted">/ Year</span></div>
           </div>
           <p className="text-xs md:text-sm text-brand-navy leading-relaxed font-medium">
             You are currently paying a six-figure <span className="font-bold text-brand-red">"Manual Labor" penalty</span>. This is capital spent on manual coordination and administrative noise that an AI Operating System handles with zero friction.
@@ -59,13 +59,13 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
 
         <div className="bg-white p-6 md:p-10 rounded-sm border-2 border-brand-red shadow-2xl flex flex-col h-full relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500">
           <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red opacity-[0.03] rounded-full translate-x-1/2 -translate-y-1/2 group-hover:scale-150 transition-transform duration-1000"></div>
-          <h4 className="text-[10px] md:text-[11px] font-extrabold uppercase text-brand-red tracking-[0.2em] md:tracking-[0.3em] mb-4 md:mb-6 flex items-center gap-2">
+          <h4 className="text-[10px] md:text-[11px] font-extrabold uppercase text-brand-red tracking-[0.1em] md:tracking-[0.3em] mb-4 md:mb-6 flex items-center gap-2 whitespace-nowrap">
             <span className="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
             2. Revenue At-Risk
           </h4>
           <div className="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-brand-border">
             <div className="text-[9px] md:text-[10px] font-extrabold text-brand-red uppercase tracking-widest mb-2 opacity-60">Response Latency Decay</div>
-            <div className="text-3xl md:text-5xl font-extrabold text-brand-red tracking-tight truncate">{formatCurrency(results.revenueLeak)} <span className="text-[10px] md:text-xs text-brand-muted opacity-60">/ Year</span></div>
+            <div className="text-3xl md:text-5xl font-extrabold text-brand-red tracking-tight">{formatCurrency(results.revenueLeak)} <span className="text-[10px] md:text-xs text-brand-muted opacity-60">/ Year</span></div>
           </div>
           <p className="text-xs md:text-sm text-brand-navy leading-relaxed font-medium">
             Based on your <span className="font-bold">{metrics.responseTime} hour lag</span>, you are leaving substantial revenue on the table. Leads responded to within 5 minutes convert at 21x the rate of your current lag.
@@ -73,7 +73,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
         </div>
 
         <div className="bg-white p-6 md:p-10 rounded-sm border border-brand-border shadow-xl flex flex-col h-full border-t-8 border-t-brand-orange hover:-translate-y-2 transition-transform duration-500">
-          <h4 className="text-[10px] md:text-[11px] font-extrabold uppercase text-brand-orange tracking-[0.2em] md:tracking-[0.3em] mb-4 md:mb-6 flex items-center gap-2">
+          <h4 className="text-[10px] md:text-[11px] font-extrabold uppercase text-brand-orange tracking-[0.1em] md:tracking-[0.3em] mb-4 md:mb-6 flex items-center gap-2 whitespace-nowrap">
             <span className="w-2 h-2 rounded-full bg-brand-orange"></span>
             3. Bionic Capacity
           </h4>
@@ -90,7 +90,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
       {/* Chart and Delta Section */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-24 items-center text-left">
         <div className="lg:col-span-7 bg-white p-6 md:p-12 rounded-sm shadow-2xl border border-brand-border relative">
-          <h3 className="text-xl md:text-2xl font-extrabold text-brand-navy mb-2 tracking-tight italic">Architecture Audit: Output per FTE</h3>
+          <h3 className="text-lg md:text-2xl font-extrabold text-brand-navy mb-2 tracking-tight italic">Architecture Audit: Output per FTE</h3>
           <p className="text-brand-muted text-[9px] md:text-[10px] font-extrabold uppercase tracking-[0.2em] md:tracking-[0.3em] mb-8 md:mb-12">Comparative Benchmark: Legacy vs. Bionic Scale</p>
           <div className="h-[300px] md:h-[400px] w-full">
             <ResponsiveContainer width="100%" height="100%">
@@ -146,7 +146,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
       <div className="bg-brand-navy text-white rounded-[4px] p-8 md:p-24 text-center relative shadow-[0_30px_60px_-15px_rgba(0,0,34,0.5)] md:shadow-[0_60px_120px_-20px_rgba(0,0,34,0.5)] overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-brand-red via-brand-orange to-brand-yellow"></div>
         <div className="relative z-10">
-          <h3 className="text-3xl md:text-6xl font-extrabold mb-6 md:mb-10 uppercase tracking-tighter leading-none">Stop Managing Noise. <br /> Start Architecting Leverage.</h3>
+          <h3 className="text-2xl md:text-6xl font-extrabold mb-6 md:mb-10 uppercase tracking-tighter leading-tight md:leading-none">Stop Managing Noise. <br /> Start Architecting Leverage.</h3>
 
           <div className="max-w-4xl mx-auto space-y-6 md:space-y-10 mb-10 md:mb-16 text-lg md:text-2xl font-light leading-relaxed text-gray-300">
             <p>
@@ -158,12 +158,12 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 w-full max-w-5xl">
               <div className="text-center md:text-left px-0 md:px-12 py-0 md:py-6 border-b-2 md:border-b-0 md:border-r-2 border-white/10 w-full md:w-auto pb-6 md:pb-0">
                 <div className="text-[10px] md:text-[11px] font-extrabold text-brand-red uppercase tracking-[0.4em] mb-2">Monthly Penalty</div>
-                <div className="text-4xl md:text-5xl font-extrabold italic">{formatCurrency(results.monthlyPenalty)}</div>
+                <div className="text-3xl md:text-5xl font-extrabold italic">{formatCurrency(results.monthlyPenalty)}</div>
               </div>
               <div className="flex-1 flex justify-center md:justify-start w-full">
                 <button
                   onClick={() => window.open('https://ai.google.dev/gemini-api/docs/billing', '_blank')}
-                  className="cta-button group bg-brand-red text-white w-full md:w-auto px-8 py-6 md:px-14 md:py-8 rounded-sm text-xl md:text-3xl font-extrabold uppercase tracking-[0.2em] md:tracking-[0.4em] flex items-center justify-center gap-4"
+                  className="cta-button group bg-brand-red text-white w-full md:w-auto px-6 py-5 md:px-14 md:py-8 rounded-sm text-lg md:text-3xl font-extrabold uppercase tracking-[0.2em] md:tracking-[0.4em] flex items-center justify-center gap-4"
                 >
                   <span>Execute Leverage Audit</span>
                   <svg className="w-6 h-6 md:w-8 md:h-8 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
@@ -172,7 +172,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
             </div>
             <div className="flex flex-col items-center gap-3 md:gap-4">
               <div className="text-brand-red font-extrabold text-2xl md:text-3xl italic">$7,500</div>
-              <p className="text-[9px] md:text-[10px] font-extrabold uppercase tracking-[0.3em] md:tracking-[0.5em] text-gray-400 opacity-80 max-w-xl leading-relaxed">
+              <p className="text-[8px] md:text-[10px] font-extrabold uppercase tracking-[0.2em] md:tracking-[0.5em] text-gray-400 opacity-80 max-w-sm md:max-w-xl leading-relaxed">
                 A 2-week diagnostic to map institutional memory, identify revenue leaks, and design your private AOS Roadmap.
               </p>
             </div>
