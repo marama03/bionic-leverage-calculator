@@ -169,7 +169,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
             <div className="flex flex-col items-center gap-3 md:gap-4">
               <div className="text-brand-red font-extrabold text-2xl md:text-3xl italic">$7,500</div>
               <p className="text-[8px] md:text-[10px] font-extrabold uppercase tracking-[0.2em] md:tracking-[0.5em] text-gray-400 opacity-80 max-w-sm md:max-w-xl leading-relaxed">
-                A 2-week diagnostic to map institutional memory, identify revenue leaks, and design your private AOS Roadmap.
+                A two-week diagnostic to map institutional memory, identify revenue leaks, and design your private AOS Roadmap.
               </p>
             </div>
           </div>
