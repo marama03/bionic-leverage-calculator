@@ -87,7 +87,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
       {/* Chart and Delta Section */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-24 items-center text-left">
         <div className="lg:col-span-7 bg-white p-6 md:p-12 rounded-sm shadow-2xl border border-brand-border relative">
-          <h3 className="text-base md:text-2xl font-extrabold text-brand-navy mb-2 tracking-tight italic whitespace-nowrap">Architecture Audit: Output per FTE</h3>
+          <h3 className="text-base md:text-2xl font-extrabold text-brand-navy mb-6 tracking-tight italic whitespace-nowrap">Architecture Audit: Output per FTE</h3>
           <p className="text-brand-muted text-[8px] md:text-[10px] font-extrabold uppercase tracking-[0.1em] md:tracking-[0.3em] mb-8 md:mb-12 whitespace-nowrap">Comparative Benchmark: Legacy vs. Bionic Scale</p>
           <div className="h-[300px] md:h-[400px] w-full">
             <ResponsiveContainer width="100%" height="100%">
