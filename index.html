@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private AOS Diagnostic | Daniel Marama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#000022',
+                            red: '#ef4124',
+                            orange: '#ef4124',
+                            gray: '#fdfdfd',
+                            text: '#1a1a1a',
+                            muted: '#666666',
+                            label: '#888888',
+                            border: '#e1e1e1'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --navy: #000022;
+            --orange: #ef4124;
+            --white: #ffffff;
+            --off-white: #fdfdfd;
+        }
+
+        body {
+            background-color: #fdfdfd;
+            -webkit-font-smoothing: antialiased;
+            color: var(--navy);
+            margin: 0;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .circular-logo {
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000022;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        /* The Centered Sharp Underline */
+        .hiring-tax-span {
+            color: var(--orange);
+            border-bottom: 6px solid var(--orange);
+            display: inline-block;
+            padding-bottom: 4px;
+            line-height: 1.1;
+        }
+
+        .diagnostic-card {
+            background-color: var(--navy);
+            box-shadow: 0 40px 100px rgba(0,0,34,0.25);
+            border-radius: 4px;
+        }
+
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(239, 65, 36, 0.4);
+        }
+
+        .secondary-btn {
+            background-color: transparent;
+            border: 2px solid var(--orange);
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            background-color: rgba(239, 65, 36, 0.1);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
