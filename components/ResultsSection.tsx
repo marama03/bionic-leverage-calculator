@@ -48,7 +48,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
             1. The Hiring Tax
           </h4>
           <div className="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-brand-border">
-            <div className="text-[9px] md:text-[10px] font-extrabold text-brand-muted uppercase tracking-widest mb-2 opacity-60">Hidden Payroll Leak</div>
+            <div className="text-[9px] md:text-[10px] font-extrabold text-brand-red uppercase tracking-widest mb-2 opacity-60">Hidden Payroll Leak</div>
             <div className="text-2xl md:text-4xl font-extrabold text-brand-navy tracking-tight">{formatCurrency(results.hiringTax)} <span className="text-xs text-brand-muted">/ Year</span></div>
           </div>
           <p className="text-xs md:text-sm text-brand-navy leading-relaxed font-medium">
