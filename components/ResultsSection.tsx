@@ -43,27 +43,27 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
 
       {/* The 3 Core Pillars - Clinical & Brutal */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 mb-12 md:mb-20 text-left">
-        <div className="bg-white p-6 md:p-10 rounded-sm border border-brand-border shadow-xl flex flex-col h-full hover:-translate-y-2 transition-transform duration-500">
+        <div className="bg-white p-6 md:p-10 rounded-sm border border-brand-border shadow-xl flex flex-col h-full border-t-8 border-t-brand-red hover:-translate-y-2 transition-transform duration-500">
           <h4 className="text-[10px] md:text-[11px] font-extrabold uppercase text-brand-red tracking-[0.1em] md:tracking-[0.3em] mb-4 md:mb-6 flex items-center gap-2 whitespace-nowrap">
             1. The Hiring Tax
           </h4>
           <div className="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-brand-border">
             <div className="text-[9px] md:text-[10px] font-extrabold text-brand-muted uppercase tracking-widest mb-2 opacity-60">Hidden Payroll Leak</div>
-            <div className="text-2xl md:text-5xl font-extrabold text-brand-navy tracking-tight">{formatCurrency(results.hiringTax)} <span className="text-xs text-brand-muted">/ Year</span></div>
+            <div className="text-xl md:text-5xl font-extrabold text-brand-navy tracking-tight">{formatCurrency(results.hiringTax)} <span className="text-xs text-brand-muted">/ Year</span></div>
           </div>
           <p className="text-xs md:text-sm text-brand-navy leading-relaxed font-medium">
             You are currently paying a six-figure <span className="font-bold text-brand-red">"Manual Labor" penalty</span>. This is capital spent on manual coordination and administrative noise that an AI Operating System handles with zero friction.
           </p>
         </div>
 
-        <div className="bg-white p-6 md:p-10 rounded-sm border-2 border-brand-red shadow-2xl flex flex-col h-full relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500">
+        <div className="bg-white p-6 md:p-10 rounded-sm border-2 border-brand-red shadow-2xl flex flex-col h-full relative overflow-hidden group border-t-8 border-t-brand-red hover:-translate-y-2 transition-transform duration-500">
           <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red opacity-[0.03] rounded-full translate-x-1/2 -translate-y-1/2 group-hover:scale-150 transition-transform duration-1000"></div>
           <h4 className="text-[10px] md:text-[11px] font-extrabold uppercase text-brand-red tracking-[0.1em] md:tracking-[0.3em] mb-4 md:mb-6 flex items-center gap-2 whitespace-nowrap">
             2. Revenue At-Risk
           </h4>
           <div className="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-brand-border">
             <div className="text-[9px] md:text-[10px] font-extrabold text-brand-red uppercase tracking-widest mb-2 opacity-60">Response Latency Decay</div>
-            <div className="text-2xl md:text-5xl font-extrabold text-brand-red tracking-tight">{formatCurrency(results.revenueLeak)} <span className="text-[10px] md:text-xs text-brand-muted opacity-60">/ Year</span></div>
+            <div className="text-xl md:text-5xl font-extrabold text-brand-red tracking-tight">{formatCurrency(results.revenueLeak)} <span className="text-[10px] md:text-xs text-brand-muted opacity-60">/ Year</span></div>
           </div>
           <p className="text-xs md:text-sm text-brand-navy leading-relaxed font-medium">
             Based on your <span className="font-bold">{metrics.responseTime} hour lag</span>, you are leaving substantial revenue on the table. Leads responded to within 5 minutes convert at 21x the rate of your current lag.
