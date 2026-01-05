@@ -13,8 +13,8 @@ export const calculateLeverage = (metrics: BusinessMetrics): CalculationResults 
   const revenueLeak = (R * 0.15) * (1 - 1 / (L + 1));
 
   // 3. THE BIONIC CAPACITY (Virtual Headcount)
-  // Formula: H * 0.4
-  const virtualHeadcount = H * 0.4;
+  // Formula: H * (W / 40) - uses actual manual glue percentage
+  const virtualHeadcount = H * (W / 40);
 
   // 4. EXECUTION EFFICIENCY SCORE
   // Formula: 100 * (1 - W / 40)
@@ -25,8 +25,8 @@ export const calculateLeverage = (metrics: BusinessMetrics): CalculationResults 
 
   // Additional helper metrics for visualization
   const currentRevPerEmployee = R / H;
-  const bionicRevPerEmployee = R / (H * 0.6); // Reclaiming 40% time
-  const headcountGap = Math.round(H * 0.4);
+  const bionicRevPerEmployee = R / (H * (1 - W/40)); // Reclaiming actual manual glue time
+  const headcountGap = Math.round(H * (W / 40));
 
   let riskLevel: 'Low' | 'Moderate' | 'High' | 'Critical' = 'Low';
   if (L > 4 || efficiency < 60) riskLevel = 'Critical';
