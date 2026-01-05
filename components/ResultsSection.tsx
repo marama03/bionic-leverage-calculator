@@ -170,7 +170,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
                     // 2. Construct URL with parameters
                     // IMPORTANT: Replace the base URL below with your actual published Audit Page URL
                     const baseUrl = 'https://marama03.github.io/Executive-Leverage-Audit/';
-                    window.location.href = `${baseUrl}?tax=${tax}&leak=${leak}&eff=${eff}&mp=${mp}&vh=${vh}&lag=${lag}`;
+                    window.location.href = `${baseUrl}?tax=${tax}&leak=${leak}&eff=${eff}&mp=${mp}&vh=${vh}&lag=${lag}#top`;
                   }}
                   className="cta-button group bg-brand-red text-white w-full md:w-auto px-6 py-5 md:px-14 md:py-8 rounded-sm text-lg md:text-3xl font-extrabold uppercase tracking-[0.2em] md:tracking-[0.4em] flex items-center justify-center gap-4"
                 >
