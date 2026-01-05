@@ -15,15 +15,23 @@ const App: React.FC = () => {
 
   const [results, setResults] = useState<CalculationResults | null>(null);
 
+  // Helper to handle scrolling in both standalone and iframe/GHL contexts
+  const scrollTop = () => {
+    // 1. Standard scroll (for standalone)
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // 2. Iframe scroll (for GHL embedding)
+    window.parent.postMessage({ type: 'scroll-to-top' }, '*');
+  };
+
   const handleCalculate = () => {
     const calcResults = calculateLeverage(metrics);
     setResults(calcResults);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollTop();
   };
 
   const handleReset = () => {
     setResults(null);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollTop();
   };
 
   return (
@@ -38,10 +46,10 @@ const App: React.FC = () => {
             <p className="text-[18px] text-brand-muted font-normal max-w-[820px] mx-auto leading-[1.6] mb-[60px]">
               Your current operation is effectively a <strong>hidden tax</strong> on your wealth. Identify the Execution Drag currently anchoring your profitability and define the path to high-velocity output.
             </p>
-            <InputSection 
-              metrics={metrics} 
-              setMetrics={setMetrics} 
-              onCalculate={handleCalculate} 
+            <InputSection
+              metrics={metrics}
+              setMetrics={setMetrics}
+              onCalculate={handleCalculate}
             />
           </>
         ) : (
@@ -56,7 +64,7 @@ const App: React.FC = () => {
           RESERVED FOR ORGANIZATIONS WITH $5M+ IN ANNUAL REVENUE.
         </div>
         <div className="mt-4 text-[10px] uppercase tracking-[0.3em] font-extrabold text-brand-navy opacity-40">
-          &copy; {new Date().getFullYear()} Daniel Marama. All Rights Reserved. 
+          &copy; {new Date().getFullYear()} Daniel Marama. All Rights Reserved.
         </div>
       </footer>
     </div>
