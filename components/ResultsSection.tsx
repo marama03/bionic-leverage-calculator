@@ -158,7 +158,17 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ results, metrics
               </div>
               <div className="flex-1 flex justify-center md:justify-start w-full">
                 <button
-                  onClick={() => window.open('https://ai.google.dev/gemini-api/docs/billing', '_blank')}
+                  onClick={() => {
+                    // 1. Get the calculated numbers
+                    const tax = Math.round(results.hiringTax);
+                    const leak = Math.round(results.revenueLeak);
+                    
+                    // 2. Construct URL with parameters
+                    // IMPORTANT: Replace the base URL below with your actual published Audit Page URL
+                    // Example: 'https://yourname.github.io/Executive-Leverage-Audit/'
+                    const baseUrl = 'https://marama03.github.io/Executive-Leverage-Audit/'; 
+                    window.location.href = `${baseUrl}?tax=${tax}&leak=${leak}`;
+                  }}
                   className="cta-button group bg-brand-red text-white w-full md:w-auto px-6 py-5 md:px-14 md:py-8 rounded-sm text-lg md:text-3xl font-extrabold uppercase tracking-[0.2em] md:tracking-[0.4em] flex items-center justify-center gap-4"
                 >
                   <span>Execute Leverage Audit</span>
