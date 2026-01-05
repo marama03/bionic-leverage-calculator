@@ -50,10 +50,38 @@
             margin: 0;
         }
 
+        /* Remove all focus outlines and blue borders */
+        *:focus {
+            outline: none !important;
+        }
+
+        *:focus-visible {
+            outline: none !important;
+        }
+
+        /* Remove any default borders that might appear blue */
+        * {
+            outline-color: transparent !important;
+        }
+
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
             -webkit-appearance: none;
             margin: 0;
+        }
+
+        /* Remove all focus outlines and blue borders */
+        *:focus {
+            outline: none !important;
+        }
+
+        *:focus-visible {
+            outline: none !important;
+        }
+
+        /* Remove any default borders that might appear blue */
+        * {
+            outline-color: transparent !important;
         }
 
         .circular-logo {
